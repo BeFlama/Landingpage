@@ -1,0 +1,143 @@
+.title_text, h2 {
+  position: absolute;
+  width: 359px;
+  height: 60px;
+  left: calc(50% - 179.5px - 0.5px);
+  top: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle_text, h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #42526E;
+}
+
+.slogan_text, .header p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: end;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.p_text, p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #252525;
+}
+
+form {
+  padding: 3.1rem;
+  width: 60%;
+  height: 60rem;
+  background: linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%);
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  z-index: 3;
+}
+
+.header {
+  background-color: #00009C;
+  padding: 2rem 5rem;
+}
+.header p {
+  color: #FFFFFF;
+  letter-spacing: 0.5rem;
+}
+
+.hero .bg-top svg {
+  height: 30rem;
+  width: 100%;
+  fill: #00009C;
+  margin-top: 0;
+  z-index: 1;
+  position: absolute;
+}
+.hero .bg-bottom svg {
+  height: 30rem;
+  width: 100%;
+  fill: #00009C;
+  margin-top: 0;
+  z-index: 1;
+  position: absolute;
+}
+.hero .hero_row .column {
+  height: 700px;
+}
+
+.feature .bg-feature {
+  fill: #00009C;
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  height: 30rem;
+}
+.feature .container {
+  margin-top: 3rem;
+}
+.feature .container img {
+  width: 100%;
+  height: 12rem;
+}
+.feature .container .row {
+  margin-top: 10rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+.feature .container .row .column {
+  padding: 7rem;
+}
+.feature .container .row .column p {
+  text-align: center;
+}
+
+.post {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  background-color: #F3F3F3;
+}
+.post .container .row {
+  align-items: center;
+}
+.post .container .row .column {
+  padding: 7rem;
+}
+.post .container .row .column img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.post .container .row .column p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.footer {
+  height: 20rem;
+  padding: 2rem;
+  background-color: #252525;
+}
+.footer small {
+  color: #F3F3F3;
+}/*# sourceMappingURL=main.css.map */
