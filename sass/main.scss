@@ -1,8 +1,5 @@
 @import '_vars';
 
-p{
-    @extend .p_text
-}
 
 .bg-top{
     fill: $primary_color;
@@ -12,18 +9,25 @@ p{
     fill: $primary_color;
 }
 
-.header{
+.section-header{
     background-color: $primary_color;
-    padding: 2rem 15rem;
-    div{
-        p{
-            @extend .slogan_text;
-        }
+
+
+    width: 100%;
+    height: 150px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p{  
+        @extend .slogan_text;
     }
+
 
 }
 
-.hero{
+.section-hero{
     display: flex;
     justify-content: center;
     .bg-top{
@@ -34,98 +38,176 @@ p{
                 position: absolute;
             }
     }
-    .bg-bottom{
-        svg{
-            fill: $primary_color;
-            margin-bottom: 0;
-            z-index: 1;
-        }
-    }
     .hero-row{
         display: flex;
-        gap: 50px;
-        width: 60%;
+        width: 80%;
         justify-content: center;
         padding: 4rem 0;
-        .column-text{
-
+        .col-text{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            h1{
+                @extend .title_text;
+            }
+            p{
+                @extend .p_text;
+            }
         }
-        .column{
+        .col-form{
             form{
-                padding: 6rem;
-                width: 70%;
-                height: 60rem;
-                background: linear-gradient(90deg, #4CB8C4 0%, $tertiary_color 100%);
+                padding: 4rem;
+                margin: 0;
+                z-index: 3;
+                width: 521px;
+                height: 620px;
+                background-image: url(../images/TextureFrom.png);            
+                background: linear-gradient(90deg, $tertiary_color 0%, $gradient_color 50.52%, $tertiary_color 100%);
                 box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
                 border-radius: 30px;
-                z-index: 3;
+                h4{
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: $white;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                }
+                label{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    margin-bottom: 1rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+
+                    color: $white;
+                }
+                .input-full{
+                    width: 100%;
+                    height: 40px;
+                    background: $white;
+                    border-radius: 5px;
+                }
+                .input-med{
+                    width: 250px;
+                    height: 40px;
+                    background: $white;
+                    border-radius: 5px;
+                }
+                .input-small{
+                    width: 200px;
+                    height: 40px;
+                    background: $white;
+                    border-radius: 5px;
+                    text-align: end;
+                }
+                .checkbox{
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 3rem 0;
+                    text-align: center;
+                    height: 20px;
+                    font-family: 'inter';
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    color: $text_dark;
+                }
+                .form-col{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                button{
+                    background-color: $secondary_color;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    height: 50px;
+                }
             }
         }
     }
 }
 
-.feature{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    h2{
-        @extend .title_text;
-        color: $bg_white;
-    }
-    .row{
-        background: $bg_white;
-        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
-        border-radius: 30px;
-        display: flex;
-        column-gap: 50px;
-        width: 100%;
-        justify-content: center;
-        padding: 5rem 15rem;
-        .column{
-            gap: 50px;
-        }
-    }
-}
-
-.post{
-    display:flex;
-    justify-content: center;
-    margin: 10rem 0;
+.section-feature{
+    height: 700px;
     background-color: $bg_light;
-    .row{
-        width: 60%;
-        padding: 10rem 0;
-        .column{
-            display: flex;
-            justify-content: center;
+    color: $white;
+    .container{
+        background: $white;
+        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);            
+        border-radius: 30px;
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        .col{
+            color: $text_color;
+            display: column;
             align-items: center;
+            text-align: center;
+            padding: 2rem;
+            .box-img{
+                padding: 2rem;
+                img{
+                    height: 200px;
+                    width: auto
+                }
+            }
             p{
-                line-height: 6rem;
+                @extend .p_text;
+            }
+        }
+
+    }
+    &::before{
+        content: "";
+        background-color: $primary_color;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        position: absolute;
+    }
+}
+
+.section-post{
+    background-color: $bg_light;
+    width: 100%;
+    height: 700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .section-post-row{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+        height: 500px;
+        background-color: $white;
+        padding: 3rem;
+        .post-text{
+            p{
+                @extend .p_text;
+                font-size: 20px;
+                line-height: 3;
             }
         }
     }
     }
 
 
-.footer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5rem;
-    background-color: $text_dark;
-    .footer-text{
-        display: flex;
-        flex-direction: column-reverse;
+.section-footer{
+    width: 100%;
+    height: 250px;
+    background-color: $bg_dark;
+    color: $white;
 
-        small{
-            font-size: 2rem;
-            color: $bg_light;
-        }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

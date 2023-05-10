@@ -17,9 +17,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,25 +32,23 @@
 </head>
 <body>
 
-    <header class="row header u-full-width">
+    <header class="section-header">
       <div>
-        <img class="u-pull-left" src="./images/logo.png" alt="Logo" style="height: 10rem">
+        <img src="./images/logo.png" alt="Logo" style="height: 10rem">
       </div>
-      <div>
-        <p class="u-pull-right" style="height: 10rem">Our commitment is your health</p>
-      </div>
+        <p>Our commitment is your health</p>
     </header>
 
+  <section class="section-hero">
+
     <div class="bg-top">
-      <svg style="height: 300px; width: 100%; margin-top: 0; z-index: 1; position: absolute;" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M-0.27,37.02 C238.42,70.56 250.84,73.53 501.41,108.06 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;"></path></svg>
+      <svg style="height: 300px; width: 100%; left:0; position:absolute; z-index: 1;" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M-0.27,37.02 C238.42,70.56 250.84,73.53 501.41,108.06 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;"></path></svg>
     </div> 
-
-  <section class="hero">
       
-    <div class="row hero-row">
+    <div class="row hero-row" style="position:relative">
 
 
-        <div class="one-half column column-text">
+        <div class="one-half column col-text">
           <h1>
             The best protection for your health
           </h1>
@@ -61,32 +57,70 @@
           </p>
         </div>
 
-        <div class="one-half column column-form">
+        <div class="one-half column col-form">
           <form action="">
-            <p> Join us</p>
+            <h4> Join us</h4>
 
-            <label for="name">Name and lastname</label>
-            <input class="u-full-width" type="text" id="name" name="name" placeholder="Marie Curie" required>
+            <div>
+              <input class="input-full" type="text" id="name" name="name" placeholder="Marie" required>
+              <label for="name">Name</label>
+            </div>
 
-            <label for="email">Email</label>
-            <input class="u-full-width" type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+            <div>
+              <input class="input-full" type="text" id="name" name="name" placeholder="Curie" required>
+              <label for="name">Lastname</label>
+            </div>
 
-            <label for="phone">Phone</label>
-            <input class="u-full-width" type="tel" id="phone" name="phone" placeholder="(+54) 11 2345 6789" required>
-
-            <label for="date">Date</label>
-            <input class="u-full-width" type="date" id="date" name="date" placeholder="DD/MM/YY" required>
-        
-            <label for="message">Message</label>
-            <textarea class="u-full-width" id="message" name="message" placeholder="Hello, I want to hire your services" required></textarea>
+            <div>
+              <input class="input-full"type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+              <label for="email">Email</label>
+            </div>
             
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Información Protección de Datos</span>
-            </label>
+            
+            <div class="form-col">
+              <div>
+                <input class="input-med" type="tel" id="phone" name="phone" placeholder="(+54) 11 2345 6789" required>
+                <label for="phone">Phone</label>
+              </div>
+
+              <div>
+                <input class="input-small" type="date" id="date" name="date" placeholder="DD/MM/YY" required>
+                <label for="date">Date</label>
+              </div>
+
+            </div>
+
+            <div class="form-col">
+              <div>
+                <select class="input-med" name="country" id="country">
+                  <option value="">Country</option>
+                  <option value="">Argentina</option>
+                  <option value="">Francia</option>
+                  <option value="">Usa</option>
+                </select>
+                <label for="country">Country</label>
+              </div>
+
+              <div>
+                <select class="input-small" name="state" id="state">
+                  <option value="">State</option>
+                  <option value="">Buenos Aires</option>
+                  <option value="">Entre Rios</option>
+                  <option value="">Neuquen</option>
+                </select>
+                <label for="state">State</label>
+              </div>
+            </div>
+
+        
+            
+            <div class="checkbox">
+              <input type="checkbox" style="margin: 0;">
+              <span >Información de Protección de Datos</span>
+            </div>
             
             <button class="button-primary u-full-width" type="submit" value="Enviar">
-              Enviar
+              Send
             </button>
         </form>
 
@@ -96,86 +130,80 @@
   
   </section><!-- end section hero -->
 
-  <div class="bg-feature">
-    <svg style="height: 500px; width: 100%; margin-top: 0; z-index: 1; position: absolute;" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.67,151.48 C-4.22,150.50 501.97,123.86 501.41,122.88 L500.00,0.00 L0.00,0.00 Z"></path></svg>
-  </div> 
 
-  <section class="container feature" style="z-index: 3;">
+
+  <section class="section-feature">
+
     <h2>Know our services</h2>
-    <div class="row">
 
-      <div class="one-third column">
-        <h3>Doctors</h3>
 
-        <div class="vector-img">
-          <img src="./images/svg_doctors.svg" alt="drvector" style="width: 300px; height: auto;">
-        </div>
-        <p>
-          Extensive list of professionals at your disposal
-        </p>
+        <div class="container">
+
+          <div class="col">
+            <h3>Doctors</h3>
+    
+            <div class="box-img">
+              <img src="./images/svg_doctors.svg" alt="drvector">
+            </div>
+            <p>
+              Extensive list of professionals at your disposal
+            </p>
+          </div>
+    
+          <div class="col">
+            <h3>Online</h3>
+            <div class="box-img">
+              <img src="./images/svg_online.svg" alt="vectoronline">
+            </div>
+            <p>
+              Online medical consultations, when you need it
+            </p>
+          </div>
+    
+          <div class="col">
+            <h3>Shifts</h3>
+            <div class="box-img">
+              <img src="./images/svg_calendar.svg" alt="vectorcalendar">
+            
+            </div>
+              <p>
+              Medical shifts available 24 hours in advance         
+            </p>
+          </div>
+
       </div>
 
-      <div class="one-third column">
-        <h3>Online</h3>
-        <div class="vetor-img">
-          <img src="./images/svg_online.svg" alt="vectoronline" style="width: 300px; height: auto;">
-        </div>
-        <p>
-          Online medical consultations, when you need it
-        </p>
-      </div>
-
-      <div class="one-third column">
-        <h3>Shifts</h3>
-        <div class="vector-img">
-          <img src="./images/svg_calendar.svg" alt="vectorcalendar" style="width: 300px; height: auto;">
-        
-        </div>
-          <p>
-          Medical shifts available 24 hours in advance         
-        </p>
-      </div>
-
-    </div>
 
   </section><!-- fin section feature (x3 columns) -->
 
-  <section class="post">
-
-    <div class="row">
-      <div class="one-half column">
+  <section class="section-post">
+    <div class="section-post-row">
+      <div class="post-img" style="padding: 2rem;">
         <img class="u-max-full-width" style="border-radius: 30px; height: 500px;" src="./images/foto medicos.png" alt="imgpost">
       </div>
-      <div class="one-half column">
-        <p style="height: 500px;">
+      <div class="post-text" style="width: 500px; padding: 2rem;">
+        <p>
           We are dedicated to protecting what you value most: your life, your health and your heritage. With our wide range of insurance, we provide peace of mind and security to our clients. Trust us to take care of you and your loved ones in any circumstance.
-          Welcome to total protection.
         </p>
-      </div>
+        <p>Welcome to total protection.</p>
     </div>
-
+    </div>
   </section>
 
-
-  <div class="footer" style="height: 250px;">
-    <div class="row">
-      <div class="twelve column">
+  <footer class="section-footer">
 
         <div class="logo-png">
           <img src="./images/logo.png" alt="Logo" style="height: 100px; margin: 2rem;">
         </div>
 
-        <div class="footer-text" style="height: 100px;">
-          <small>Cookies | Privacy | Registration </small>
-          <small>Copyright ©  2023</small>
+        <div class="footer-text">
+          <small>Cookies | Privacy | Registration 
+          Copyright ©  2023</small>
         </div>
 
-      </div>
-    </div>
-  </div>
+  </footer>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- End Document-->
 </body>
 
 </html>
