@@ -1,0 +1,12 @@
+@import '_vars';
+
+.section-footer{
+    width: 100%;
+    height: 250px;
+    background-color: $bg_dark;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

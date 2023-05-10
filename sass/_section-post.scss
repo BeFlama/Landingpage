@@ -1,0 +1,27 @@
+@import '_vars';
+
+.section-post{
+    background-color: $bg_light;
+    width: 100%;
+    height: 700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .section-post-row{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+        height: 500px;
+        background-color: $white;
+        padding: 3rem;
+        .post-text{
+            p{
+                @extend .p_text;
+                font-size: 20px;
+                line-height: 3;
+            }
+        }
+    }
+    }
