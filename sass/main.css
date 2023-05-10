@@ -255,6 +255,9 @@
 }
 .section-feature h2 {
   color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  padding-top: 2rem;
 }
 .section-feature .container {
   background: #FFFFFF;
