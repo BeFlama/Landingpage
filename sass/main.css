@@ -253,6 +253,9 @@
   background-color: #F3F3F3;
   color: #FFFFFF;
 }
+.section-feature h2 {
+  color: #FFFFFF;
+}
 .section-feature .container {
   background: #FFFFFF;
   box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
@@ -347,7 +350,6 @@
 }
 .section-post .section-post-row .post-text p {
   font-size: 20px;
-  line-height: 3;
 }
 
 .title_text, .section-hero .hero-row .col-text h1 {
