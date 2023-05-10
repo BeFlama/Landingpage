@@ -40,7 +40,6 @@
     }
     .hero-row{
         display: flex;
-        width: 80%;
         justify-content: center;
         padding: 4rem 0;
         .col-text{
@@ -53,9 +52,11 @@
             }
             p{
                 @extend .p_text;
+                width: 80%;
             }
         }
         .col-form{
+            justify-content: end;
             form{
                 padding: 4rem;
                 margin: 0;
