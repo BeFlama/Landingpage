@@ -30,10 +30,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  width: 80%;
+
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px;
+
   box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;

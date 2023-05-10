@@ -7,21 +7,11 @@ $bg_light: #F3F3F3;
 $bg_white: #FFFFFF;
 
 .title_text{
-    position: absolute;
-    width: 359px;
-    height: 60px;
-    left: calc(50% - 359px/2 - 0.5px);
-    top: 25px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 150%;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 150%;
 }
 .subtitle_text{
     font-family: 'Inter';
@@ -38,22 +28,21 @@ $bg_white: #FFFFFF;
 }
 
 .slogan_text{
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 3rem;
-    text-align: end;
-    letter-spacing: 0.1em;
-
+    letter-spacing: 0.5rem;
+    margin: 0;
     color: $bg_white;
 }
 
 .p_text{
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2.5rem;
     line-height: 40px;
     
     display: flex;
